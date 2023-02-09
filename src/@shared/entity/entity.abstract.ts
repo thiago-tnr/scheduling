@@ -1,0 +1,10 @@
+import Notification from '../validator/notification'
+
+export default abstract class Entity {
+  protected _id: string
+  public notification: Notification
+
+  constructor () {
+    this.notification = new Notification()
+  }
+}
