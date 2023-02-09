@@ -1,6 +1,6 @@
 import { v4 as uuid } from 'uuid'
 import Entity from '../../../@shared/entity/entity.abstract'
-import NotificationError from '../../../@shared/validator/notification.error'
+import NotificationError from '../../../@shared/notification/notification.error'
 import CustomerValidatorFactory from '../factory/clinic.validator.factory'
 import type Address from '../valueObject/address.valueObject'
 

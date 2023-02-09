@@ -1,4 +1,4 @@
-import ValidatorInterface from '../../../@shared/entity/validator/validator.interface'
+import ValidatorInterface from '../../../@shared/validator/validator.interface'
 import Clinic from '../entity/clinic'
 import CustomerYupValidator from '../validator/clinic.yup.validator'
 
