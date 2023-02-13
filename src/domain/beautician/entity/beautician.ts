@@ -11,6 +11,7 @@ export default class Beautician extends Entity {
     super()
     this._id = uuid()
     this.validate()
+
     if (this.notification.hasErrors()) {
       throw new NotificationError(this.notification.getErrors())
     }
