@@ -1,6 +1,6 @@
 import * as yup from 'yup'
-import ValidatorInterface from '../../../../@shared/validator/validator.interface'
-import Services from '../services'
+import ValidatorInterface from '../../../@shared/validator/validator.interface'
+import Services from '../entity/services'
 
 export default class ServicesYupValidator implements ValidatorInterface<Services> {
   validate (entity: Services): void {
