@@ -8,7 +8,7 @@ export default class ServicesYupValidator implements ValidatorInterface<Services
       yup.object()
         .shape({
           name: yup.string().required('Name is required'),
-          price: yup.string().required('Price is required'),
+          price: yup.number().required('Price is required').moreThan(0),
           beauticianId: yup.string().required('Beautician service provider is required'),
           duration: yup.string().required('Duration is required')
         })
