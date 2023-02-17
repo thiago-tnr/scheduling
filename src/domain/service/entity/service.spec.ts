@@ -1,9 +1,9 @@
-import ServiceFactory from '../factory/service.factory'
+import Services from './services'
 
 describe('Service entity tests', () => {
   it('should throw error when price is empty', () => {
     expect(() => {
-      ServiceFactory.create(0, 'any_service', '60', 2, 'beauticianId')
-    }).toThrowError('Price is required')
+      new Services(0, 'any_service', '60', 2, 'beauticianId')
+    }).toThrowError('services: price must be greater than 0')
   })
 })

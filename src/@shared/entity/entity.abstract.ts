@@ -4,7 +4,11 @@ export default abstract class Entity {
   protected _id: string
   public notification: Notification
 
-  constructor() {
+  constructor () {
     this.notification = new Notification()
+  }
+
+  get id (): string {
+    return this._id
   }
 }

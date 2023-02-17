@@ -14,10 +14,6 @@ export default class Services extends Entity {
     }
   }
 
-  get id (): string {
-    return this._id
-  }
-
   get price (): number {
     return this._price
   }
@@ -38,6 +34,10 @@ export default class Services extends Entity {
     return this._beauticianId
   }
 
+  validate (): void {
+    ServicesValidatorFactory.create().validate(this)
+  }
+
   changeName (name: string): void {
     this._name = name
   }
@@ -56,10 +56,6 @@ export default class Services extends Entity {
 
   changeQuantity (quantity: number): void {
     this._quantity = quantity
-  }
-
-  validate (): void {
-    ServicesValidatorFactory.create().validate(this)
   }
 
   total (): number {
